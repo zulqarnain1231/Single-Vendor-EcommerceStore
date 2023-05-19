@@ -13,12 +13,12 @@ function Home() {
       <div className="h-[300px] max-w-[375px] sm:max-w-screen-sm md:max-w-screen-md  lg:max-w-full my-10">
         <Swiper
          slidesPerView={4}
-         spaceBetween={25}
+         spaceBetween={20}
           pagination={{
             clickable: true,
           }}
           breakpoints={{
-            640: {
+            300: {
               slidesPerView: 1,
               spaceBetween: 20,
             },
