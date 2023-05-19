@@ -10,11 +10,11 @@ import Hero from "./Hero";
 function Home() {
   return (
     <Wrapper>
-    <Hero />
+      <Hero />
       <div className="h-[300px] max-w-[375px] sm:max-w-screen-sm md:max-w-screen-md  lg:max-w-full my-10">
         <Swiper
-         slidesPerView={4}
-         spaceBetween={20}
+          slidesPerView={4}
+          spaceBetween={20}
           pagination={{
             clickable: true,
           }}
@@ -53,7 +53,6 @@ function Home() {
           ))}
         </Swiper>
       </div>
-  
     </Wrapper>
   );
 }
