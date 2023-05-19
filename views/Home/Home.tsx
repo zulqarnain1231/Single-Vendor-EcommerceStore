@@ -6,10 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Mousewheel, Autoplay } from "swiper";
+import Hero from "./Hero";
 function Home() {
   return (
     <Wrapper>
-      <div className="w-full h-[calc(100vh-140px)] bg-[url('/Assets/home/heroBg.jpg')] bg-bottom bg-cover bg-no-repeat "></div>
+    <Hero />
       <div className="h-[300px] max-w-[375px] sm:max-w-screen-sm md:max-w-screen-md  lg:max-w-full my-10">
         <Swiper
          slidesPerView={4}
