@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
   .swiper-pagination span {
     width: 35px!important;
