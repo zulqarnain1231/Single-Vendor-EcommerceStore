@@ -55,7 +55,7 @@ const ProductCard: React.FC<Props> = ({
               <AiOutlineHeart size={25} />
             )}
           </button>
-          <Link href={'/'} className="w-full h-[46px] flex items-center justify-center font-inter font-semibold z-10 text-[14px] absolute -bottom-[70px] group-hover:bottom-0 group-hover:transition-all group-hover:duration-700 bg-main-secondary before:absolute before:bg-black-main before:top-0 before:left-0 before:h-full before:-z-10 before:w-0 hover:before:w-full before:transition-all before:duration-500 ease-in-out text-white-main">
+          <Link href={'/productdetails'} className="w-full h-[46px] flex items-center justify-center font-inter font-semibold z-10 text-[14px] absolute -bottom-[70px] group-hover:bottom-0 group-hover:transition-all group-hover:duration-700 bg-main-secondary before:absolute before:bg-black-main before:top-0 before:left-0 before:h-full before:-z-10 before:w-0 hover:before:w-full before:transition-all before:duration-500 ease-in-out text-white-main">
             See Details
           </Link>
         </div>
