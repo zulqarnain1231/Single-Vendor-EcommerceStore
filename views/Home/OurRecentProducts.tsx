@@ -7,10 +7,10 @@ import ProductCard from "../../components/shared/ProductCards/ProductCard";
 import { Data } from "../../constants/Data/JSON";
 import H1Heading from "@/components/shared/CustomTypography/H1Heading";
 
-const OurBestSellingProducts = () => {
+const OurRecentProducts = () => {
   return (
     <div className="w-full flex flex-col gap-4 items-center justify-center">
-      <H1Heading>Our Best Selling Products</H1Heading>
+      <H1Heading>Our Recent Products</H1Heading>
       <div className="h-[450px] max-w-full">
         <Swiper
           slidesPerView={4}
@@ -33,13 +33,14 @@ const OurBestSellingProducts = () => {
             },
           }}
           autoplay={{
-            delay: 3000,
+            delay: 2000,
             disableOnInteraction: false,
+            reverseDirection:true,
           }}
           modules={[Pagination, Mousewheel, Autoplay]}
           className="mySwiper"
         >
-          {Data.ProductsSliderData.map((item: any, index: number) => (
+          {Data.RecentProductsData.map((item: any, index: number) => (
             <SwiperSlide key={index}>
               <ProductCard
                 title={item.title}
@@ -57,4 +58,4 @@ const OurBestSellingProducts = () => {
   );
 };
 
-export default OurBestSellingProducts;
+export default OurRecentProducts;
