@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import Wrapper from "@/components/shared/ComponentWrapper/Wrapper";
 import LargeText from "@/components/shared/CustomTypography/LargeText";
+import SizeButton from "@/components/ProductDetail/SizeButton";
 
 const ProductDetail = () => {
   //Product Description Line Clamp
@@ -77,13 +78,14 @@ const ProductDetail = () => {
                 <p className="font-inter font-[400] text-[15px] text-gray-400">
                   Select Size
                 </p>
-                
+                <div className="w-full flex items-center justify-start gap-4">
+                  <SizeButton size="S" state={false} setState={() => {}} />
+                  <SizeButton size="M" state={true} setState={() => {}} />
+                  <SizeButton size="L" state={false} setState={() => {}} />
+                  <SizeButton size="XL" state={false} setState={() => {}} />
+                </div>
               </div>
-              {/*Products Avaialability Badge */}
-              <div className="w-[330px] py-3 text-lg font-bold text-lightningYellow bg-lightningYellow bg-opacity-20 px-2 flex items-center justify-center capitalize">
-                <span className="text-black-main">Availability : </span>{" "}
-                &nbsp;20 Products Available
-              </div>
+            
               {/* Product Count Increment / Decrement  + Wishlist + Add to cart button  */}
               <div className="w-full flex items-center justify-start gap-2 xs:gap-3">
                 {/* Incerment / Decrement Button + Wishlist + Add to Cart  */}

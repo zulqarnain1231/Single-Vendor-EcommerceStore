@@ -39,8 +39,7 @@
 .image-gallery-thumbnail:hover {
     border-width: 1px !important;
     border-style: solid !important;
-    --tw-border-opacity: 1;
-    border-color: rgb(239 239 239/var(--tw-border-opacity)) !important;
+    border-color: black !important;
     width: 110px !important;
     height: 130px !important;
     margin-right: 4px;
