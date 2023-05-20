@@ -6,11 +6,12 @@ import { Pagination, Mousewheel, Autoplay } from "swiper";
 import ProductCard from "../../components/shared/ProductCards/ProductCard";
 import { Data } from "../../constants/Data/JSON";
 import H1Heading from "@/components/shared/CustomTypography/H1Heading";
+
 const OurBestSellingProducts = () => {
   return (
     <div className="w-full flex flex-col gap-4 items-center justify-center">
       <H1Heading>Our Best Selling Products</H1Heading>
-      <div className="h-[400px] max-w-[375px] sm:max-w-screen-sm md:max-w-screen-md  lg:max-w-full">
+      <div className="h-[450px] max-w-[375px] sm:max-w-screen-sm md:max-w-screen-md  lg:max-w-full">
         <Swiper
           slidesPerView={4}
           spaceBetween={20}
