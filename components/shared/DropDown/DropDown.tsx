@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import SmallText from "../CustomTypography/SmallText";
 
 interface props {
   item: Array<object>;
   Title: string;
-  Event: (e: string) => void;
+  setCategory: any;
 }
 
-const Dropdown: React.FC<props> = ({ item, Title, Event }: props) => {
+const Dropdown: React.FC<props> = ({ item, Title, setCategory }: props) => {
   const [DropdownTitle, setDropdownTitle] = useState<string | null>(null);
 
   useEffect(() => {
@@ -17,27 +18,29 @@ const Dropdown: React.FC<props> = ({ item, Title, Event }: props) => {
   return (
     <div className="w-full h-full inline-block MyDropdown relative">
       <button
-        className={`font-inter font-normal text-[1rem] leading-[1rem] capitalize ${
+        className={`font-inter font-normal text-[12px] whitespace-nowrap sm:text-[1rem] leading-[1rem] capitalize ${
           DropdownTitle === "all categories" ? "text-input" : "text-main-band"
-        } w-full h-full flex justify-between items-center px-4`}
+        } w-full h-full flex justify-between items-center px-2 sm:px-4`}
       >
         {DropdownTitle}
         <FiChevronDown className="" />
       </button>
 
-      <div className="w-full hidden absolute left-0 right-0 p-4 bg-white-main item-shadow gap-3 justify-center items-start flex-col z-50">
+      <div className="w-[180px] sm:w-full hidden absolute left-0 right-0 p-4 bg-white-main item-shadow gap-3 justify-center items-start flex-col z-50">
         {item?.map((item: any, index: number) => {
           return (
-            <p
+            <button
               onClick={() => {
-                Event(item.Value);
-                setDropdownTitle(item.Title);
+                setCategory(item.name);
+                setDropdownTitle(item.name);
               }}
               key={index}
-              className="font-inter font-normal text-black-cool text-[.875rem] leading-[1.25rem] hover:underline hover:text-main-brand cursor-pointer"
+              className=" text-black-cool"
             >
-              {item.Title}
-            </p>
+              <SmallText styles="capitalize hover:underline hover:text-main-brand cursor-pointer">
+                {item.name}
+              </SmallText>
+            </button>
           );
         })}
       </div>
