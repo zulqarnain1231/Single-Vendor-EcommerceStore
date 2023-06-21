@@ -1,8 +1,6 @@
-
 import { AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
-
 
 export const Data = {
   topSection: {
@@ -40,71 +38,75 @@ export const Data = {
     AllCategories: [
       {
         name: "t-thirts",
-        path: "",
+        path: "/product-category/t-thirts",
         // Icon: <MdElectricalServices size={16} color="#1D1D1D" />,
       },
       {
-        name: "button-down shirts",
-        path: "",
+        name: "button-down-shirts",
+        path: "/product-category/button-down shirts",
       },
       {
         name: "Polo Shirts",
-        path: "",
+        path: "/product-category/Polo-Shirts",
       },
       {
         name: "Button-Down Shirts",
-        path: "",
+        path: "/product-category/Button-Down-Shirts",
       },
       {
         name: "Long-Sleeve Shirts",
-        path: "",
+        path: "/product-category/Long-Sleeve Shirts",
       },
       {
         name: "Short-Sleeve Shirts",
-        path: "",
+        path: "/product-category/Short-Sleeve Shirts",
       },
       {
         name: "Henley Shirts",
-        path: "",
+        path: "/product-category/Henley Shirts",
       },
       {
         name: "Graphic Shirts",
-        path: "",
+        path: "/product-category/Graphic Shirts",
       },
       {
         name: "Oxford Shirts",
-        path: "",
+        path: "/product-category/Oxford Shirts",
       },
       {
         name: "Flannel Shirts",
-        path: "",
+        path: "/product-category/Flannel Shirts",
       },
       {
         name: "Sports Shirts",
-        path: "",
+        path: "/product-category/Sports Shirts",
       },
       {
         name: "Work Shirts",
-        path: "",
+        path: "/product-category/Work Shirts",
       },
     ],
     Menu: [
       {
         name: "home",
+        route: "/",
       },
       {
         name: "about us",
+        route: "/",
       },
       {
         name: "privacy policy",
+        route: "/",
       },
       {
         name: "faq",
+        route: "/",
       },
     ],
   },
 
-  footer : [
+  footer: [
     {
       title: "about us",
       links: [
@@ -294,5 +296,532 @@ export const Data = {
       picture: "/Assets/home/Shirt.jpg",
     },
   ],
-
+  RelatedProducts: [
+    {
+      title: "SLIM FIT PEPPERMINT COTTON TEE",
+      price: 33.0,
+      new: true,
+      soldOut: false,
+      picture: "/Assets/home/shirt3.webp",
+    },
+    {
+      title: "SLIM FIT Black COTTON TEE",
+      price: 28.0,
+      new: false,
+      sale: "20% Off",
+      picture: "/Assets/home/shirt4.jpg",
+      soldOut: false,
+    },
+    {
+      title: "Fancy Cotton Tee",
+      price: 450.0,
+      new: false,
+      sale: "10% Off",
+      soldOut: false,
+      picture: "/Assets/home/shirt5.jpg",
+    },
+    {
+      title: "Nike Addidas Shoes",
+      price: 230.0,
+      new: false,
+      soldOut: false,
+      picture: "/Assets/home/shirt6.jpg",
+    },
+    {
+      title: "SLIM FIT PEPPERMINT COTTON TEE",
+      price: 33.0,
+      new: true,
+      soldOut: false,
+      picture: "/Assets/home/Shirt.jpg",
+    },
+    {
+      title: "SLIM FIT Black COTTON TEE",
+      price: 28.0,
+      new: false,
+      sale: "20% Off",
+      picture: "/Assets/home/shirt2.jpg",
+      soldOut: false,
+    },
+    {
+      title: "Fancy Cotton Tee",
+      price: 450.0,
+      new: false,
+      sale: "10% Off",
+      soldOut: false,
+      picture: "/Assets/home/shirt5.jpg",
+    },
+    {
+      title: "SLIM FIT PEPPERMINT COTTON TEE",
+      price: 33.0,
+      new: true,
+      soldOut: false,
+      picture: "/Assets/home/Shirt.jpg",
+    },
+  ],
+  ImageGalleryData: [
+    {
+      original: "/Assets/home/shirt2.jpg",
+      thumbnail: "/Assets/home/shirt2.jpg",
+    },
+    {
+      original: "/Assets/home/shirt3.webp",
+      thumbnail: "/Assets/home/shirt3.webp",
+    },
+    {
+      original: "/Assets/home/shirt4.jpg",
+      thumbnail: "/Assets/home/shirt4.jpg",
+    },
+  ],
+  AccountNavbar: [
+    {
+      name: "Shopping Cart",
+      route: "/cart",
+      number: 2,
+    },
+    {
+      name: "WishList",
+      route: "/wishlist",
+      number: 3,
+    },
+    {
+      name: "My Account",
+      route: "/myaccount",
+    },
+  ],
+  CartItems: [
+    {
+      name: "Short Sleeve TEE",
+      picture: "/Assets/home/shirt5.jpg",
+      price: 23,
+    },
+    {
+      name: "Beautiful White Cotton TEE",
+      picture: "/Assets/home/shirt6.jpg",
+      price: 34,
+    },
+  ],
+  WishListItems: [
+    {
+      name: "Anime Cotton TEE",
+      picture: "/Assets/home/shirt3.webp",
+      price: 23,
+      status: "In Stock",
+    },
+    {
+      name: "Beautiful Black Cotton TEE",
+      picture: "/Assets/home/shirt2.jpg",
+      price: 34,
+      status: "In Stock",
+    },
+    {
+      name: "Beautiful Mens Cotton TEE",
+      picture: "/Assets/home/shirt4.jpg",
+      price: 24,
+      status: "In Stock",
+    },
+  ],
+  BuyerSidebar: [
+    {
+      name: "Dashboard",
+      route: "/myaccount",
+    },
+    {
+      name: "Orders",
+      route: "/myaccount/orders",
+    },
+    {
+      name: "Addresses",
+      route: "/myaccount/addresses",
+    },
+    {
+      name: "Account",
+      route: "/myaccount/account",
+    },
+  ],
+  RecentOrders: [
+    {
+      order: 2131,
+      date: "22-3-23",
+      total: "$32 for 2 Items",
+      status: "Processing",
+    },
+    {
+      order: 1231,
+      date: "5-3-23",
+      total: "$52 for 3 Items",
+      status: "Deliverd",
+    },
+  ],
+  AdminData: {
+    snippetsData: [
+      {
+        name: "Jan",
+        orders: 1,
+      },
+      {
+        name: "Feb",
+        orders: 2,
+      },
+      {
+        name: "Mar",
+        orders: 3,
+      },
+      {
+        name: "Apr",
+        orders: 3,
+      },
+      {
+        name: "May",
+        orders: 6,
+      },
+      {
+        name: "Jun",
+        orders: 5,
+      },
+      {
+        name: "Jul",
+        orders: 6,
+      },
+      {
+        name: "Aug",
+        orders: 7,
+      },
+      {
+        name: "Sep",
+        orders: 6,
+      },
+      {
+        name: "Oct",
+        orders: 5,
+      },
+      {
+        name: "Sep",
+        orders: 6,
+      },
+      {
+        name: "Dec",
+        orders: 7,
+      },
+    ],
+    ordersData: [
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "deliverd",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 1,
+        status: "deliverd",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "delived",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+      {
+        productName: "t-shirt",
+        pic: "/Assets/home/shirt2.jpg",
+        orderId: "2657",
+        qty: 3,
+        status: "process",
+        purchasedDate:"28.04.2021",
+      },
+    ],
+    monthlySales: [
+      {
+        month: "Jan",
+        sellers: 11,
+      },
+      {
+        month: "Feb",
+        sellers: 12,
+      },
+      {
+        month: "Mar",
+        sellers: 13,
+      },
+      {
+        month: "Apr",
+        sellers: 13,
+      },
+      {
+        month: "May",
+        sellers: 16,
+      },
+      {
+        month: "Jun",
+        sellers: 15,
+      },
+      {
+        month: "Jul",
+        sellers: 16,
+      },
+      {
+        month: "Aug",
+        sellers: 17,
+      },
+      {
+        month: "Sep",
+        sellers: 16,
+      },
+      {
+        month: "Oct",
+        sellers: 15,
+      },
+      {
+        month: "Sep",
+        sellers: 16,
+      },
+      {
+        month: "Dec",
+        sellers: 17,
+      },
+    ],
+    weeklySales: [
+      {
+        week: "Week1",
+        sellers: 3,
+      },
+      {
+        week: "Week2",
+        sellers: 4,
+      },
+      {
+        week: "Week3",
+        sellers: 5,
+      },
+      {
+        week: "Week4",
+        sellers: 2,
+      },
+    ],
+    yearlySales: [
+      {
+        year: "2019",
+        sellers: 1400,
+      },
+      {
+        year: "2020",
+        sellers: 1100,
+      },
+      {
+        year: "2021",
+        sellers: 1300,
+      },
+      {
+        year: "2022",
+        sellers: 1100,
+      },
+      {
+        year: "2023",
+        sellers: 1600,
+      },
+    ],
+    buyerData: [
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+      {
+        name: "ahmad",
+        address: "st Paul Street Los Vegas",
+        purchasedProducts: "2",
+        amountSpent: "54",
+      },
+    ],
+  },
 };
